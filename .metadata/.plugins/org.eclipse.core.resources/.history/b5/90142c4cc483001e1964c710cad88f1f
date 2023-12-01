@@ -1,0 +1,10 @@
+package com.aleal.hotels.model;
+
+import java.util.Map;
+
+public class PropertiesModels {
+
+	private String msg;
+	private String buildVersion;
+	private Map<String, String> mailDetails;
+}

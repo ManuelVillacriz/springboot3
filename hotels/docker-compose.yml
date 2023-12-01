@@ -1,0 +1,28 @@
+services:
+
+  hotels:
+    image: manuelvillacriz/hotels:latest
+    mem_limit: 800m
+    ports:
+      - "8080:8080"
+    networks:
+      - manuelvillacriz-network
+    
+  rooms:
+    image: manuelvillacriz/rooms:latest
+    mem_limit: 800m
+    ports:
+      - "8081:8081"
+    networks:
+      - manuelvillacriz-network
+    
+  reservations:
+    image: manuelvillacriz/reservations:latest
+    mem_limit: 800m
+    ports:
+      - "8082:8082"
+    networks:
+      - manuelvillacriz-network
+    
+networks:
+  manuelvillacriz-network:

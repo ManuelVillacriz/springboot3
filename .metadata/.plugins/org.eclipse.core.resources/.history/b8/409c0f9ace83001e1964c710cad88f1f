@@ -1,0 +1,11 @@
+package com.aleal.reservations.config;
+
+import java.util.Map;
+
+public class ReservationsServiceConfiguration {
+	
+	private String msg;
+	private String buildVersion;
+	private Map<String, String> mailDetails;
+
+}

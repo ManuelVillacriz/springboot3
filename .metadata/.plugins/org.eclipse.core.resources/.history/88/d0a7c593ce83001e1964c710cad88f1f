@@ -1,0 +1,5 @@
+package com.aleal.reservations.config;
+
+public class ReservationsServiceConfiguration {
+
+}

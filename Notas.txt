@@ -1,0 +1,29 @@
+docker -v --> Version instalada de docker
+docker ps --> Todos los contenedores que estan corriendo actualmente
+docker run --> permite descargar y crear un contenedor ejemplo --> docker run postgres:12.16-bullseye
+docker run -e POSTGRES_PASSWORD=password postgres:12.16-bullseye
+docker ps -a  Todos los contenedores aunque no esten corriendo.
+docker rm --> Elimina un contenedor de docker Ejempl --> docker rm idcontenedor
+docker images --> todas las imagenes descargadas
+
+docker stop --> para detener un contenedor por id
+docker start --> Para iniciar un contenedor por id
+docker logs --> Muestra los logs del contenedor por id
+docker logs -f --> Para dejar activo los logs del contenedor por id
+docker pull --> Descarga una imagen 
+
+/* Levantar un contenedor de mysql */
+docker run -p 3307:3306 --name docker-mysql -e MYSQL_ROOT_PASSWORD=sasa -e MYSQL_DATABASE=bookingdb -d mysql:8
+
+/* Construir una iunstancia de un jar */
+docker build - -t mvc/hotels --> Corresponde al nombre del tag
+
+docker inspect --> Con los 3 primeros caracteres del id de la imagen.
+docker run -p 8080:8080 mvc/hotels --> Crear un contenedor del jar 
+
+spring-boot:build-image --> Crear una imagen usando build pack desde maven
+
+docker build . -t manuelvillacriz/hotels --> Construir una imagen para luego subir a un repositorio.
+
+docker login -u "manuelvillacriz" -p "Sp22051983Mv03121974" docker.io --> Comando para loguearse a docker hub
+docker push docker.io/manuelvillacriz/hotels --> Para subir una imagen a docker hub o actualizarla

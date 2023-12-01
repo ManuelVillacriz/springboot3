@@ -1,0 +1,5 @@
+package com.aleal.hotels.config;
+
+public class HotelsServiceConfiguration {
+
+}
